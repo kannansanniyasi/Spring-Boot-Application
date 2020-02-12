@@ -1,0 +1,31 @@
+
+<body>
+<div class="jumbotron text-center">
+  <h1>{{title}}</h1>
+</div>
+  
+<div class="container">
+  <h2>Weather Details</h2> 
+  <div class="table-responsive-sm table-responsive-md table-responsive-lg table-responsive-xl">        
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Weather</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="row in weather">
+        <td scope="row">{{row.sNo}}</td>
+        <td>{{row.city}}</td>
+        <td>{{row.country}}</td>
+        <td>{{row.weather}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+</body>
+</html>
